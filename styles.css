@@ -243,3 +243,7 @@ nav.fill ul li a:hover:after {
     transition: 0.3s;
     box-shadow: 0px 8px 30px rgb(79, 176, 255);
   }
+
+.footer {
+  text-align: center;
+}
