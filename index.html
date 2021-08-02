@@ -1,91 +1,109 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WinTweakers</title>
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 
     <body>
-        <div class="w3-top w3-bar w3-wide w3-padding w3-card nav">
-            <a href="index.html" class="w3-bar-item w3-button"><img src="assets/images/twak.png" width="20" height="20" alt="logo"> WinTweakers</a>
-            
-            <div class="w3-right w3-hide-small">
-            <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-            <a href="#about" class="w3-bar-item w3-button">About</a>
+        <!--Navbar-->
+        <nav class="stroke" data-aos="fade-down" data-aos-delay="300">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+
+        <p class="title" data-aos="fade-up">WinTweakers</p>
+        <img src="./img/pfp.png" width="300" class="titleimg" data-aos="fade-up">
+
+        <p class="center" class="titleimg" data-aos="fade-up">Scroll Down</p>
+        <svg class="arrows" class="titleimg" data-aos="fade-up">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+
+        <p id="split" />
+        <div class="container">
+            <p class="title" id="about" data-aos="fade-right">About Us</p>
+            <p data-aos="fade-right"><br />We are a group of programmers aiming to fix Windows 10/11 <del>and maybe make other things</del>.</p>
+            <div class="card" data-aos="fade-down" data-aos-delay="300">
+                <div class="pic-container">
+                    <img class="pic" src="https://github.com/CallMeEchoCodes.png" alt="Profile Picture">
+                </div>
+                <div class="name">
+                    <span>CallMeEcho</span>
+                </div>
+                <div class="title2">
+                    <span>PROGRAMMER</span>
+                </div>
+                <div class="description">
+                    <p>I maintain stuff! <del>for about a month</del></p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/CallMeEchoCodes" target="_blank" class="gh">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/imcallmeecho" target="_blank" class="twt">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" data-aos="fade-down" data-aos-delay="600">
+                <div class="pic-container">
+                    <img class="pic" src="https://github.com/khanhmuy.png" alt="Profile Picture">
+                </div>
+                <div class="name">
+                    <span>Hmuy</span>
+                </div>
+                <div class="title2">
+                    <span>PROGRAMMER</span>
+                </div>
+                <div class="description">
+                    <p>basement-dwelling stuff</p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/khanhmuy" target="_blank" class="gh">
+                    <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/hmuy0608" target="_blank" class="twt">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="w3-display-container w3-content" style="max-width:1500px;">
-            <img class="w3-image w3-animate-top" src="assets/images/img19.png" alt="img" width="100%">
-            <div class="w3-display-middle w3-margin-top w3-center">
-                <h2 class="w3-xxlarge w3-text-white w3-wide w3-animate-top">WinTweakers</h2>
+        <p id="split" />
+        <div class="container">
+            <p class="title" id="projects" data-aos="fade-right">Projects</p>
+            <div class="card"data-aos="fade-down" data-aos-delay="300">
+                <div class="pic-container">
+                    <img class="pic" src="./img/windowstoolbox.png" alt="">
+                </div>
+                <div class="name">
+                    <span>Windows Toolbox</span>
+                </div>
+                <div class="title2">
+                    <span>PROGRAM</span>
+                </div>
+                <div class="description">
+                    <p>A powerful but simple, easy to use toolbox for Windows 10 / 11.</p>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/WinTweakers/WindowsToolbox" target="_blank" class="gh">
+                    <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
+  
+  
 
-        <!--Projects-->
-        <div id="projects" class="w3-container w3-padding-32">
-            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-8">Projects</h2>
-        </div>
-
-        <p>There will be more amazing projects comming soon(tm), so stay tuned</p>
-        <a href="https://github.com/WinTweakers/WindowsToolbox">
-            <div class="boxes">
-                <h4>WindowsToolbox</h4>
-                <p>A powerful but simple, easy to use toolbox for Windows 10 / 11.</p>
-            </div>
-        </a>
-
-        <a href="https://github.com/WinTweakers/WindowsToolbox-Auto">
-            <div class="boxes">
-                <h4>WindowsToolbox-Auto</h4>
-                <p>WindowsToolbox, but completely automatic, intended for post-install purposes.</p>
-            </div>
-        </a>
-            
-        <div class="center">
-        <div id="about" class="w3-container w3-padding-32 w3-center">
-            <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h2>
-            <p>Just a couple of lads who have nothing to do in the summer.</p>
-            <div class="w3-center w3-col l3 m3 w3-margin-bottom">
-                <a href="https://github.com/CallMeEchoCodes">
-                    <img src="https://avatars.githubusercontent.com/u/36752347?v=4" class="creditimg" alt="Echo" style="width:50%">
-                </a>
-                <h3>
-                    <a href="https://github.com/CallMeEchoCodes">CallMeEcho</a>
-                </h3>
-                <p class="w3-opacity">Developer</p>
-            </div>
-
-            <div class="w3-center w3-col l3 m3 w3-margin-bottom">
-                <a href="https://github.com/khanhmuy">
-                    <img src="https://avatars.githubusercontent.com/u/66995788?v=4" class="creditimg" alt="hmuy" style="width:50%">
-                </a>
-                <h3>
-                    <a href="https://github.com/khanhmuy">khanhmuy</a>
-                </h3>
-                <p class="w3-opacity">Developer</p>
-            </div>
-
-            <div class="w3-center w3-col l3 m3 w3-margin-bottom">
-                <a href="https://github.com/AvaaaUwU">
-                    <img src="https://avatars.githubusercontent.com/u/80199022?v=4" class="creditimg" alt="ava" style="width:50%">
-                </a>
-                <h3>
-                    <a href="https://github.com/AvaaaUwU">Ava</a>
-                </h3>
-                <p class="w3-opacity">Developer</p>
-            </div>
-        </div>
-        </div>
-        <br><br><br><br>
-        <footer>
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="contact.html">Contact Us</a>
-            <br><br>
-            <p>a khanhmuy site</p>
-        </footer>
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init()</script>
     </body>
 </html>
