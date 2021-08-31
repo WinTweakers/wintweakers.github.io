@@ -186,7 +186,7 @@ nav.fill ul li a:hover:after {
   .pic {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
+    border-radius: 70%;
     margin: auto;
     position: relative;
     top: 5px;
